@@ -1,0 +1,195 @@
+html{
+    box-sizing: border-box;
+    
+}
+*, ::before, ::after{
+    box-sizing: inherit;
+}
+
+/*
+#FAFAFA -pozadí
+#8B8B8B - text
+#407BFF - modra
+#407BFF1F - stín
+*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    background-color: #FAFAFA;
+    text-align: center;
+    padding: 60px 20px;
+    margin: 0 auto;
+}
+header img{
+    width:350px;
+}
+h1{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+h2{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 60px 0 15px 0;
+}
+
+p {
+    color: #8B8B8B;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 30px 0;
+}
+.sluzby p{
+    margin: 0 0 30px 0;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu a{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.modre{
+        background-color: #407BFF;
+        margin-bottom: 10px;
+        border-radius: 50px;
+}
+.sede{
+        background-color: #8B8B8B;
+        border-radius: 50px;
+}
+
+.mapa, .kaktus, .letadlo, .palma, .destnik, .karavan{
+    background-color: white;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    }
+.sluzby a{
+    color: #8B8B8B;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.palma a, .destnik a, .karavan a{
+margin-left: 25px;
+} 
+.mapa a, .letadlo a{
+    margin-left: 30px;
+}
+.kaktus a{
+    margin-left: 33px;
+}
+
+@media screen and (min-width:640px) {
+    header img{
+        width: 400px;
+    }
+    h1{
+        margin-top: 30px;
+    }
+    .menu li{
+        display: inline-block;
+    }
+    .modre{
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    h2{
+        margin-top: 80px;
+    }
+    p{
+        margin: 20px 80px 40px 80px;
+    }
+    .sluzby{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sluzby a{
+        margin: 20px 0 0 0;
+    }
+    .mapa, .kaktus, .letadlo, .palma, .destnik, .karavan{
+        flex: 0 0 calc((100% - 40px) / 3);
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 15px 20px 15px;
+    }
+}
+ @media screen and (min-width:1100px) {
+    
+    body{
+        padding: 60px 0px;
+        margin: 0 auto;
+        max-width: 1040px;
+    }
+    .hlavicka{
+        display: flex;
+        text-align: left; 
+        align-items: center; 
+        justify-content: space-between;      
+    }
+    .img, .uvod{
+        flex: 0 0 calc((100% - 60px) / 2);
+    }
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .hlavicka, .ck{
+        flex-direction: row-reverse;
+    }
+    .ck{
+        text-align: left;
+        margin: 80px 0;
+    }
+    .delegati{
+        text-align: left;
+    }
+    p{
+        margin:15px 0;
+    }
+    .uvod p{
+        margin-top: 30px;
+    }
+    h1, h2{
+        margin: 0;
+    }
+    header img{
+        width: 425px;        
+    }
+    .ck .text{
+        margin-left: 60px;
+    }
+    .delegati .text{
+        margin-right: 60px;
+    }
+    .mapa, .kaktus, .letadlo, .palma, .destnik, .karavan{
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    .sluzby{
+        flex: 1 0 550px;
+    }
+    .text{
+        flex: 1 1 430px;
+    }
+    .img{
+        padding: 0 32.5px;
+    }
+} 
